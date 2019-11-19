@@ -13,7 +13,7 @@ function recursion() {
   sqs.receiveMessage({
     QueueUrl: process.env.QueueUrl,
     VisibilityTimeout: 30,
-    WaitTimeSeconds: 5
+    WaitTimeSeconds: 20
   }, function (err, response) {
     if (err) console.log(err);
     console.log(response);

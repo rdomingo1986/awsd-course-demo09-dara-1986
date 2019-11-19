@@ -11,9 +11,9 @@ sns.publish({
   Message: 'This is a simple message',
   Subject: 'Example Subject',
   MessageAttributes: {
-    "filter": {
-      DataType: 'String',
-      StringValue: 'no_receive'
+    "custom_attribute": {
+      DataType: "String",
+      StringValue: "custom_values"
     }
   }
 }, function (err, response) {
